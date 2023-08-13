@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Health'O</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordionItems = document.querySelectorAll(".accordion-item");
+        
+            accordionItems.forEach(function (item) {
+                const header = item.querySelector(".accordion-header");
+                const content = item.querySelector(".accordion-content");
+                const toggleButton = item.querySelector(".accordion-toggle");
+        
+                header.addEventListener("click", function () {
+                    item.classList.toggle("active");
+                    if (item.classList.contains("active")) {
+                        toggleButton.textContent = "-";
+                    } else {
+                        toggleButton.textContent = "+";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--header start-->
+        <header class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="img/logo3.png"></a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav-item"><a href="#">Home</a></li>
+                            <li class="nav-item"><a href="#about">about</a></li>
+                            <li class="nav-item"><a href="#FAQ">FAQ</a></li>
+                            <li class="nav-item"><a href="#testimonials">testimonials</a></li>
+                            <li class="nav-item"><a href="#Services">Services</a></li>
+                            <li class="nav-item"><a href="#footer">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    <!--header end-->
+    
+    <!--home section start -->
+    <section class="home-section" id="home">
+        <div class="home-bg"></div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
+                    <h1>Healtho</h1>
+                    <p>All Health and Healthcare Services</p>
+                    <a href="#Services" class="btn btn-default">our services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--home section end -->  
+
+    <!-- about section start --> 
+    <section class="about-section sec-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="our story" data-aos="fade-up">about us</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Welcome to Healtho</h3>
+                    <p>Welcome to Healtho! As your partner, we specialize in Roster Management, Contract Communication, and Claim Adjudication. Our Roster Management ensures seamless healthcare team coordination, optimizing patient care workflows. With expertise in Contract Communication, we facilitate transparent agreements among healthcare entities, promoting clear collaborations.
+                        Your success is our priority.
+                    </p>
+                    <P>At Healtho, precision Claim Adjudication is our forte. Through advanced technology and skilled professionals, we expedite accurate claims processing, reducing bottlenecks. We're dedicated to streamlining healthcare operations, so you can focus on delivering high-quality care to your patients.
+                    </P>
+                    <P>Embrace efficiency and accuracy with Healtho. Join us in revolutionizing healthcare administration, making it simpler, smarter, and more effective. Your success is our priority.</P>
+                    
+                    <a href="#Services" class="btn btn-default">Check Our Services</a>
+                </div>
+                <div class="about-img" data-aos="fade-left">
+                    <div class="img-box">
+                        <!-- <h3>15+ years experience</h3> -->
+                        <img src="img/medicine.jpg" alt="alt img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end --> 
+    <!-- menu section start --> 
+    <!-- <section class="menu-section sec-padding" id="our-menu">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="Order Now" data-aos="fade-up">our menu</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-tabs" data-aos="fade-up">
+                    <button type="button" class="menu-tab-item active" data-target="#lunch">Lunch</button>
+                    <button type="button" class="menu-tab-item" data-target="#dinner">Dinner</button>
+                    <button type="button" class="menu-tab-item" data-target="#drinks">Drinks</button>
+                    <button type="button" class="menu-tab-item" data-target="#desserts">Desserts</button>
+                </div>
+            </div>
+            <div class="row menu-tab-content active" id="lunch">
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/1.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/2.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/3.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/4.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/5.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/6.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/7.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/8.jpg" alt="menu item thumbnail">
+                        <h3>Lunch Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="dinner">
+                <div class="menu-item" data-aos="fade-up-right" >
+                    <div class="menu-item-title">
+                        <img src="img/menu/1.jpg" alt="menu item thumbnail">
+                        <h3>Dinner Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/2.jpg" alt="menu item thumbnail">
+                        <h3>Dinner Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/3.jpg" alt="menu item thumbnail">
+                        <h3>Dinner Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/6.jpg" alt="menu item thumbnail">
+                        <h3>Dinner Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="drinks">
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/d1.png" alt="menu item thumbnail">
+                        <h3>Drinks Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/d2.png" alt="menu item thumbnail">
+                        <h3>Drinks Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/d3.png" alt="menu item thumbnail">
+                        <h3>Drinks Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/d4.png" alt="menu item thumbnail">
+                        <h3>Drinks Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+
+            </div>
+            <div class="row menu-tab-content" id="desserts">
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/des1.png" alt="menu item thumbnail">
+                        <h3>Desserts Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-left">
+                    <div class="menu-item-title">
+                        <img src="img/menu/des2.png" alt="menu item thumbnail">
+                        <h3>Desserts Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+                <div class="menu-item" data-aos="fade-up-right">
+                    <div class="menu-item-title">
+                        <img src="img/menu/des3.png" alt="menu item thumbnail">
+                        <h3>Desserts Items</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        $40.00
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- menu section end --> 
+    <!-- accordion section -->
+
+    <!-- accordion section -->
+    <section class="testimonials-section sec-padding" id="testimonials">
+        <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2 data-title="Frequently Asked Questions" data-aos="fade-up">FAQ</h2>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3 class="accordion-title">What is the Contracts & Chargebacks Solution?</h3>
+                    <button class="accordion-toggle">+</button>
+                </div>
+                <div class="accordion-content">
+                    <p>The Contracts & Chargebacks solution eliminates chargeback errors, by automatically settling chargeback transactions against aligned pricing contracts and established business rules.
+                        <br>
+                        Through the solution pharmaceutical and other healthcare product manufacturers, wholesalers and GPOs get a unified view of:
+                        <br>
+                        <br>
+                        <ol>Clean/validated GPO membership rosters</ol>
+                        <ol>
+                            Customer Identifier data (HIN, DEA, 340B)
+                        </ol>    
+                        <ol>
+                            Contract headers, pricing, customers
+                        </ol>
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3 class="accordion-title">Why Should pharmaceutical manufacturers join the network?</h3>
+                    <button class="accordion-toggle">+</button>
+                </div>
+                <div class="accordion-content">
+                    <p>For pharmaceutical manufacturers provides a platform for industry level innovation and automation with your trading partners.
+                        Value comes in many forms whether an organization adopts an existing commercial solution or joins a working group to help shape new protocol and future industry solutions from the ground up.
+                        <br>
+                        <br>
+                        The Product Verification solution delivers cost effective compliance with DSCSA, as well as improved industry collaboration around product transfers of ownership.
+                        <br>
+                        <br>
+                        Other benefits include the elimination of unnecessary add/re-bills for improved customer service, more accurate/timely government pricing based on accurate chargeback data, reduced compliance 
+                        risk from real-time adherence to the DEA database, immediate contract activation and (for generic manufacturers) increased sales from faster price changes in wholesaler systems.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3 class="accordion-title">Why Should healthcare product manufacturers join the network?</h3>
+                    <button class="accordion-toggle">+</button>
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        The Network has expanded the Contracts & Chargebacks solution from the pharmaceutical industry into the medical, surgical and healthcare product industry.
+                        <br>
+                        <br>
+                        The Contracts & Chargebacks Solution delivers real value to both the top and bottom line for healthcare product manufacturers. Manufacturers who join the
+                        network with Contracts & Chargebacks see massive time savings by eliminating/improving manual processes like resolving chargeback errors, evaluating new customers,
+                        managing GPO membership and auditing customer master data.
+                        <br>
+                        <br>
+                        Manufacturers also see a large reduction in revenue leakage from the elimination of unapproved deductions/unresolved chargeback settlements, incorrect chargeback approvals,
+                        credits/returns incorrectly rejected as duplicates and low dollar chargebacks under the threshold for review.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h3 class="accordion-title">Why Should distributors join the network?</h3>
+                    <button class="accordion-toggle">+</button>
+                </div>
+                <div class="accordion-content">
+                    <p>
+                        For Distributors in the healthcare industry, efficiency and automation are crucial. The Network offers a completely new category of automation with trading partners, by enforcing rules between companies in the same way internal systems are integrated.
+                        <br>
+                        <br>
+                        The Product Verification solution delivers cost effective compliance with DSCSA, as well as improved industry collaboration around product transfers of ownership. Through blockchain technology, and quality execution the Network offers some of the fastest response times in the industry on product verification.
+                    </p>
+                </div>
+            </div>
+            <!-- Add more accordion items as needed -->
+        </div>
+        </div>
+    </section>
+    <!-- testimonial section starts --> 
+
+    <section class="testimonials-section sec-padding" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-title="testimonials" data-aos="fade-up">Some Feedback</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testi-item" data-aos="zoom-in">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Sarah</h3>
+                            <span>Medicine Specialist</span>
+                        </div>
+                        <div class="testi-author-img">
+                            <img src="img/testimonials/1.jpg" alt="testi-author-img">
+                        </div>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo rem ab nemo sapiente libero laboriosam omnis, quo nulla maxime eaque dolor magnam at, corporis, dolores consectetur veniam impedit quos? Distinctio!</p>
+                    <div class="ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>   
+                <div class="testi-item" data-aos="zoom-in">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Berlin</h3>
+                            <span>Rceptionist</span>
+                        </div>
+                        <div class="testi-author-img">
+                            <img src="img/testimonials/2.jpg" alt="testi-author-img">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellendus, numquam error odit reiciendis officiis maiores recusandae molestias voluptate vero aut est? Exercitationem illo aliquam hic ipsa quisquam, ipsam voluptas!</p>
+                    <div class="ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>   
+                <div class="testi-item" data-aos="zoom-in">
+                    <div class="testi-author">
+                        <div class="testi-author-name">
+                            <h3>Sourav Joshi</h3>
+                            <span>Customer</span>
+                        </div>
+                        <div class="testi-author-img">
+                            <img src="img/testimonials/3.jpg" alt="testi-author-img">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque perferendis eius similique quos totam animi quae vero alias architecto eos quia deleniti neque praesentium laudantium magnam explicabo, ea id ex?
+                    Error ad, omnis delectus sapiente id et illum, perspiciatis molestiae alias temporibus vel cupiditate laborum est, minima reprehenderit? Amet quas vero ducimus. Eos exercitationem, voluptatibus rerum ut delectus nulla corrupti?</p>
+                    <div class="ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <!-- testimonial section end -->
+
+    <!-- team section start --> 
+    <section class="team-section sec-padding" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="section-title" id="Services">
+                    <h2 data-title="Services" data-aos="fade-up">Our Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="img/roster.jpg" alt="team item">
+                    <div class="team-item-info">
+                        <h3>Roster Management</h3>
+                        <p>Through Healtho, GPO rosters are validated against integrated customer identity data (HIN, DEA, 340B) to automate GPO membership management</p>
+                    </div>
+                </div>
+                <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="img/contract.jpg" alt="team item">
+                    <div class="team-item-info">
+                        <h3>Contract Communication</h3>
+                        <p>Through Healtho, Contract updates are shared in real-time between trading partners ensure alignment and increased pricing accuracy</p>
+                    </div>
+                </div>
+                <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="img/claim.jpg" alt="team item">
+                    <div class="team-item-info">
+                        <h3>Claim Adjudication</h3>
+                        <p>Through Healtho, chargebacks accuracy is enforced by blockchain, along with automation of credits, returns & other chargeback resubmissions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section end --> 
+    <!-- footer section start --> 
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-item">
+                    <h3>our locations</h3>
+                    <p>India</p>
+                    <p>UK</p>
+                    <p>USA</p>
+                    <p>Russia</p>
+                    <p>Brazil</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Opening hours</h3>
+                    <p>365 days <br> 10:00am-11:59pm</p>
+                </div>
+                <div class="footer-item">
+                    <h3>contact us</h3>
+                    <p>+91 0098765436</p>
+                    <p>+91 0098765435</p>
+                    <p>+91 0098765434</p>
+                    <p>+91 0098765433</p>
+                    <p>zuy@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="copyright">
+                    &copy; 2023-Designed by team D-Buggers
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end --> 
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/" class="facebook" target="_orchids">
+            Click here to visit <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" class="twitter" target="_orchids">
+            Click here to visit <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram" target="_orchids">
+            Click here to visit <i class="fab fa-instagram-square"></i>
+        </a>
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
